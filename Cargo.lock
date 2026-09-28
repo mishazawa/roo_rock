@@ -11,8 +11,7 @@ checksum = "320119579fcad9c21884f5c4861d16174d0e06250625266f50fe6898340abefa"
 [[package]]
 name = "agb"
 version = "0.25.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f10a27a7be6227fdb6558086ac12b3302202b66ee9cf179f882e7f041e6258a4"
+source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
 dependencies = [
  "agb_fixnum",
  "agb_hashmap",
@@ -20,7 +19,8 @@ dependencies = [
  "agb_macros",
  "agb_save",
  "agb_sound_converter",
- "bilge",
+ "arbitrary-int",
+ "bitbybit",
  "critical-section",
  "once_cell",
  "portable-atomic",
@@ -31,8 +31,7 @@ dependencies = [
 [[package]]
 name = "agb_fixnum"
 version = "0.25.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "56a9e7207bfdcab85688c317f0582d70564a717b5c3a101728ab4bd4c1252c34"
+source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
 dependencies = [
  "const_soft_float",
  "num-traits",
@@ -44,8 +43,7 @@ dependencies = [
 [[package]]
 name = "agb_hashmap"
 version = "0.25.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "14ec1be9c9856b0b23bd7c8b2123c88965ae64ee963ca90926be99c34b9cede6"
+source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
 dependencies = [
  "rustc-hash",
  "serde",
@@ -54,8 +52,7 @@ dependencies = [
 [[package]]
 name = "agb_image_converter"
 version = "0.25.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9ad581ca4125ca246bf470912306704be0c927aa926602df5e9797bf8fccdbd3"
+source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
 dependencies = [
  "asefile",
  "fontdue",
@@ -72,8 +69,7 @@ dependencies = [
 [[package]]
 name = "agb_macros"
 version = "0.25.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "53fde29503bff075b2ff8ebc6c0080af62119c0a09ae88e021cad89653584e72"
+source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -83,8 +79,7 @@ dependencies = [
 [[package]]
 name = "agb_midi"
 version = "0.25.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1e14df60859194e0b1cd5511026b65d110ea5cf9b5aa5d12cc3142f19cc7080a"
+source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
 dependencies = [
  "agb_midi_core",
  "agb_tracker_interop",
@@ -99,8 +94,7 @@ dependencies = [
 [[package]]
 name = "agb_midi_core"
 version = "0.25.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f29295ad48bac157941955be81df65bc90da220b9704055484216e8bfc3c06a9"
+source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
 dependencies = [
  "agb_fixnum",
  "agb_tracker_interop",
@@ -111,8 +105,7 @@ dependencies = [
 [[package]]
 name = "agb_save"
 version = "0.25.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f8283d550338b6b9f9e5efe79ad17bc3891d66223c67b50ef4e02a4a58afa8b7"
+source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
 dependencies = [
  "crc16",
  "postcard",
@@ -122,8 +115,7 @@ dependencies = [
 [[package]]
 name = "agb_sound_converter"
 version = "0.25.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a16ba924c2d67cfd35fdee7cff31014bb9caa0a32ab935c72ed68eb36f83a1b6"
+source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
 dependencies = [
  "hound",
  "proc-macro2",
@@ -134,8 +126,7 @@ dependencies = [
 [[package]]
 name = "agb_tracker"
 version = "0.25.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6058f598efd086c43337d6a6ac928e954d3c7f8bf3dc3acc0b990b76b811e0ce"
+source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
 dependencies = [
  "agb",
  "agb_fixnum",
@@ -147,8 +138,7 @@ dependencies = [
 [[package]]
 name = "agb_tracker_interop"
 version = "0.25.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6c19f2e320ef0f3666adddf3277531fde6598c2a6fc27eaabdb43ffaf7f67b1a"
+source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
 dependencies = [
  "agb_fixnum",
  "proc-macro2",
@@ -158,8 +148,7 @@ dependencies = [
 [[package]]
 name = "agb_xm"
 version = "0.25.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8a2b5b5cd5409f6699d71b97a2bc3659fbd2fefe9919579c3aefc4164b40b4dd"
+source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
 dependencies = [
  "agb_tracker_interop",
  "agb_xm_core",
@@ -173,8 +162,7 @@ dependencies = [
 [[package]]
 name = "agb_xm_core"
 version = "0.25.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a0e1a468d518c25aac035b1564a67f5d5f721a0489a8160a096af10023e032bd"
+source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
 dependencies = [
  "agb_fixnum",
  "agb_tracker_interop",
@@ -218,29 +206,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f2032f911046de80f0a198e0901378627c33f59ea0ac00e363d481118bd70a53"
 
 [[package]]
-name = "bilge"
-version = "0.3.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "279c74986684d5cc7bbbd079aa448e8f852992cd385d85bb3a37e374c087b065"
-dependencies = [
- "arbitrary-int",
- "bilge-impl",
-]
-
-[[package]]
-name = "bilge-impl"
-version = "0.3.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a1176e49f42fe135cd2b56465e4f7d07038d3728f5e9f27fb2f08ed3fef75339"
-dependencies = [
- "itertools",
- "proc-macro-error2",
- "proc-macro2",
- "quote",
- "syn 2.0.119",
-]
-
-[[package]]
 name = "bincode"
 version = "2.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -258,6 +223,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bf95709a440f45e986983918d0e8a1f30a9b1df04918fc828670606804ac3c09"
 dependencies = [
  "virtue",
+]
+
+[[package]]
+name = "bitbybit"
+version = "2.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bf218b839af0730012cc21856c4149789afde9ae6dc3078c7adaf311e8b76854"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn 2.0.119",
 ]
 
 [[package]]
@@ -340,12 +316,6 @@ name = "critical-section"
 version = "1.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "790eea4361631c5e7d22598ecd5723ff611904e3344ce8720784c93e3d83d40b"
-
-[[package]]
-name = "either"
-version = "1.18.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "252afb9ae5eaa683babdc6a068b3f5726eb19e05070c731f9b2a23a7c3e8ed34"
 
 [[package]]
 name = "embedded-io"
@@ -462,15 +432,6 @@ checksum = "cc4e190f5d26ca7051642629da2c52fc03bde85a03197c99408dcd291734c855"
 dependencies = [
  "equivalent",
  "hashbrown 0.17.1",
-]
-
-[[package]]
-name = "itertools"
-version = "0.14.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2b192c782037fadd9cfa75548310488aabdbf3d2da73885b31bd0abd03351285"
-dependencies = [
- "either",
 ]
 
 [[package]]
@@ -644,27 +605,6 @@ dependencies = [
  "proc-macro2",
  "quote",
  "version_check",
-]
-
-[[package]]
-name = "proc-macro-error-attr2"
-version = "2.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "96de42df36bb9bba5542fe9f1a054b8cc87e172759a1868aa05c1f3acc89dfc5"
-dependencies = [
- "proc-macro2",
- "quote",
-]
-
-[[package]]
-name = "proc-macro-error2"
-version = "2.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "11ec05c52be0a07b08061f7dd003e7d7092e0472bc731b4af7bb1ef876109802"
-dependencies = [
- "proc-macro-error-attr2",
- "proc-macro2",
- "quote",
 ]
 
 [[package]]

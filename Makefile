@@ -1,7 +1,7 @@
 NAME := roo_rock
 MGBA := /Applications/mGBA.app/Contents/MacOS/mGBA
 
-.PHONY: run release build rom-fix rom-run
+.PHONY: run release build rom-fix rom-run docs
 
 build:
 	cargo build
@@ -17,3 +17,6 @@ rom-fix:
 
 rom-run:
 	$(MGBA) -C logToStdout=1 -C logLevel.gba.debug=127 roms/$(NAME).gba
+
+docs:
+	cargo doc --open
