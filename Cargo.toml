@@ -5,8 +5,8 @@ authors = ["Mishazawa"]
 edition = "2024"
 
 [dependencies]
-agb = { git = "https://github.com/mishazawa/agb" }
-agb_tracker = { git = "https://github.com/mishazawa/agb" }
+agb = { git = "https://github.com/agbrs/agb" }
+agb_tracker = { git = "https://github.com/agbrs/agb" }
 
 [profile.dev]
 opt-level = 3

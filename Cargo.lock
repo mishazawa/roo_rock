@@ -11,7 +11,7 @@ checksum = "320119579fcad9c21884f5c4861d16174d0e06250625266f50fe6898340abefa"
 [[package]]
 name = "agb"
 version = "0.25.0"
-source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
+source = "git+https://github.com/agbrs/agb#8d1b5bb9b957058c22c2fd9960f240eb4b6274f5"
 dependencies = [
  "agb_fixnum",
  "agb_hashmap",
@@ -31,7 +31,7 @@ dependencies = [
 [[package]]
 name = "agb_fixnum"
 version = "0.25.0"
-source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
+source = "git+https://github.com/agbrs/agb#8d1b5bb9b957058c22c2fd9960f240eb4b6274f5"
 dependencies = [
  "const_soft_float",
  "num-traits",
@@ -43,7 +43,7 @@ dependencies = [
 [[package]]
 name = "agb_hashmap"
 version = "0.25.0"
-source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
+source = "git+https://github.com/agbrs/agb#8d1b5bb9b957058c22c2fd9960f240eb4b6274f5"
 dependencies = [
  "rustc-hash",
  "serde",
@@ -52,7 +52,7 @@ dependencies = [
 [[package]]
 name = "agb_image_converter"
 version = "0.25.0"
-source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
+source = "git+https://github.com/agbrs/agb#8d1b5bb9b957058c22c2fd9960f240eb4b6274f5"
 dependencies = [
  "asefile",
  "fontdue",
@@ -69,7 +69,7 @@ dependencies = [
 [[package]]
 name = "agb_macros"
 version = "0.25.0"
-source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
+source = "git+https://github.com/agbrs/agb#8d1b5bb9b957058c22c2fd9960f240eb4b6274f5"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -79,7 +79,7 @@ dependencies = [
 [[package]]
 name = "agb_midi"
 version = "0.25.0"
-source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
+source = "git+https://github.com/agbrs/agb#8d1b5bb9b957058c22c2fd9960f240eb4b6274f5"
 dependencies = [
  "agb_midi_core",
  "agb_tracker_interop",
@@ -94,7 +94,7 @@ dependencies = [
 [[package]]
 name = "agb_midi_core"
 version = "0.25.0"
-source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
+source = "git+https://github.com/agbrs/agb#8d1b5bb9b957058c22c2fd9960f240eb4b6274f5"
 dependencies = [
  "agb_fixnum",
  "agb_tracker_interop",
@@ -105,7 +105,7 @@ dependencies = [
 [[package]]
 name = "agb_save"
 version = "0.25.0"
-source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
+source = "git+https://github.com/agbrs/agb#8d1b5bb9b957058c22c2fd9960f240eb4b6274f5"
 dependencies = [
  "crc16",
  "postcard",
@@ -115,7 +115,7 @@ dependencies = [
 [[package]]
 name = "agb_sound_converter"
 version = "0.25.0"
-source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
+source = "git+https://github.com/agbrs/agb#8d1b5bb9b957058c22c2fd9960f240eb4b6274f5"
 dependencies = [
  "hound",
  "proc-macro2",
@@ -126,7 +126,7 @@ dependencies = [
 [[package]]
 name = "agb_tracker"
 version = "0.25.0"
-source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
+source = "git+https://github.com/agbrs/agb#8d1b5bb9b957058c22c2fd9960f240eb4b6274f5"
 dependencies = [
  "agb",
  "agb_fixnum",
@@ -138,7 +138,7 @@ dependencies = [
 [[package]]
 name = "agb_tracker_interop"
 version = "0.25.0"
-source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
+source = "git+https://github.com/agbrs/agb#8d1b5bb9b957058c22c2fd9960f240eb4b6274f5"
 dependencies = [
  "agb_fixnum",
  "proc-macro2",
@@ -148,7 +148,7 @@ dependencies = [
 [[package]]
 name = "agb_xm"
 version = "0.25.0"
-source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
+source = "git+https://github.com/agbrs/agb#8d1b5bb9b957058c22c2fd9960f240eb4b6274f5"
 dependencies = [
  "agb_tracker_interop",
  "agb_xm_core",
@@ -162,7 +162,7 @@ dependencies = [
 [[package]]
 name = "agb_xm_core"
 version = "0.25.0"
-source = "git+https://github.com/mishazawa/agb#3744e6b4b3df261f87217bb6f2c30fff4a8a845b"
+source = "git+https://github.com/agbrs/agb#8d1b5bb9b957058c22c2fd9960f240eb4b6274f5"
 dependencies = [
  "agb_fixnum",
  "agb_tracker_interop",
